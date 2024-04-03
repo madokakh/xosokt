@@ -1,0 +1,86 @@
+body{
+
+    margin:0;
+    padding:0;
+}
+.image-container {
+    position: relative;
+}
+
+.container {
+    position: absolute; /* Positions .container absolutely within its positioned parent */
+    top: 0; /* Align to the top edge of .image-container */
+    right: 0; /* Align to the right edge of .image-container */
+    bottom: 0; /* Align to the bottom edge of .image-container */
+    left: 0; /* Align to the left edge of .image-container */
+    display: flex; /* Keeps the flex layout */
+}
+
+.part1 {
+    width: 870px; /* Fixed width */
+    background-color:transparent; /* Example background color */
+    /* Style as needed */
+}
+
+.part2 {
+    flex-grow: 1; /* Takes up the rest of the horizontal space */
+    margin-top: 152px;
+    margin-bottom: 68px;
+    /* Style as needed */
+    display: flex;
+}
+.results{
+    width: 590px;
+    height: 780px;
+    
+    margin-top: 63px;
+    margin-left: 331px;
+    display: flex;
+    flex-direction: column;
+}
+.ho-channel, .a-channel,.b-channel,.c-channel {
+
+    height: 142px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.d-channel{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    height: 142px;
+    text-align: center;
+}
+
+#two-digits, #three-digits{
+    text-align: center;
+    font-size: 100px;
+    font-family:'Arial Rounded MT Bold';
+    font-weight:bold;
+    color: maroon;
+
+}
+#three-digits{
+    width: 325px;
+    height: 100%;
+    line-height: 142px;
+
+}
+#two-digits{
+    height: 100%;
+    line-height: 142px;
+    width: 230px;
+   
+    
+    
+}
+#two-digits img,#three-digits img {
+    margin-top: 20px;
+    width: 100px; /* Example width, adjust as necessary */
+    height: auto; /* Maintain aspect ratio */
+    /* Add any other styling or positioning here */
+   
+}

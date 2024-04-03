@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Page</title>
+    <link rel="stylesheet" href="/style_page.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="show-results.js" defer></script>
+
+</head>
+<body>
+    <div class="image-container">
+        <img src="image-r-10.png" alt="Background" id="backgroundImage">
+    
+        <div class="container">
+            <div class="part1">Part 1 Content</div>
+            <div class="part2">Part 2 Content
+                <div class="results">
+                    <div class="ho-channel">
+                        <div id="two-digits">
+                            51
+                        </div>
+
+                        <div id="three-digits">
+                            000
+                        </div>
+                    </div>
+
+                    <div class="a-channel">
+                        <div id="two-digits">
+                            00
+                        </div>
+
+                        <div id="three-digits">
+                            000
+                        </div>
+                    </div>
+
+                    <div class="b-channel">
+                        <div id="two-digits">
+                            00
+                        </div>
+
+                        <div id="three-digits">
+                            000
+                        </div>
+                    </div>
+
+                    <div class="c-channel">
+                        <div id="two-digits">
+                            00
+                        </div>
+
+                        <div id="three-digits">
+                            000
+                        </div>
+                    </div>
+
+                    <div class="d-channel">
+                        <div id="two-digits">
+                            00
+                        </div>
+
+                        <div id="three-digits">
+                            000
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const img = document.getElementById('backgroundImage');
+        const card = document.querySelector('.card');
+        img.onload = function() {
+            card.style.width = img.naturalWidth + 'px';
+            card.style.height = img.naturalHeight + 'px';
+        };
+    </script>
+
+</body>
+</html>

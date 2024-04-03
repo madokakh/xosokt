@@ -1,0 +1,73 @@
+/* Base styles for the results container */
+#results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for the single card that contains all regions' results */
+.region-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: fit-content;
+}
+
+/* Styling for each region's container within the card */
+.region {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+/* Paragraph styles for the results, with delimiter */
+.region-container p {
+  margin: 4px 0;
+  padding: 1px 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  position: relative;
+  width: 310px; 
+  min-height: 50px;
+}
+
+/* Delimiter (line) after each category result */
+.region-container p:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Special styling for 'giai8' and 'giaidb' categories */
+.giai8, .giaidb {
+  color: maroon;
+}
+
+.giai8 {
+  font-size: 74px;
+}
+
+.giaidb {
+  font-size: 64px;
+}
+
